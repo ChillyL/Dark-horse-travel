@@ -15,4 +15,21 @@ public interface UserDao {
      * @param user
      */
     public void save(User user);
+
+    /**
+     * 激活用户
+     * @param code
+     * @return
+     */
+    User findByCode(String code);
+
+    void updateStatus(User user);
+
+    /**
+     * 登录
+     * @param username
+     * @param password
+     * @return
+     */
+    User findByUsernameAndPassword(String username, String password);
 }

@@ -25,7 +25,9 @@ public class JDBCUtils {
 	// 2. 创建连接池对象
 	static {
 		// 加载配置文件中的数据
-		InputStream is = JDBCUtils.class.getClassLoader().getResourceAsStream("/druid.properties");
+//		InputStream is = JDBCUtils.class.getClassLoader().getResourceAsStream("/druid.properties");
+//		//报错inStream parameter is null；应该是没有把druid.properties文件加载到输入流中
+		InputStream is = JDBCUtils.class.getResourceAsStream("/druid.properties");
 		Properties pp = new Properties();
 		try {
 			pp.load(is);

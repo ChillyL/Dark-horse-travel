@@ -3,7 +3,7 @@ package cn.itcast.travel.util;
 import java.util.UUID;
 
 /**
- * 产生UUID随机字符串工具类
+ * 产生UUID随机字符串工具类  （基本是全球唯一，根据电脑等信息）
  */
 public final class UuidUtil {
 	private UuidUtil(){}
